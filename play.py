@@ -1,6 +1,6 @@
 import pexpect
 
-player1='flat_mc_player/Gomoku3.py'
+player1='optimisticGomoku/Gomoku4.py'
 player2='random_player/Gomoku2.py'
 
 win1=0
@@ -116,7 +116,7 @@ def saveResult():
     f.write("draw {}\n".format(draw))
     f.close()
 
-playGames()
+playGames(1)
 outputResult()
 saveResult()
 
